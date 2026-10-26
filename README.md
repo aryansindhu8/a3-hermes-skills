@@ -7,12 +7,10 @@ Open-Meteo API, using only Hermes' built-in `web_extract` tool.
 ## Install
 
 ```bash
-# as a tap (lets you browse and update every skill in this repo)
-hermes skills tap add <github-user>/<this-repo>
-hermes skills install <github-user>/<this-repo>/open-meteo-briefing
-
-# or just this skill
 hermes skills install <github-user>/<this-repo>/skills/open-meteo-briefing
+
+# optional: add the repo as a tap, to browse and update its skills with `hermes skills search`
+hermes skills tap add <github-user>/<this-repo>
 ```
 
 Requires the `web` toolset (`web_search`/`web_extract`) with a configured web
